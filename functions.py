@@ -45,3 +45,18 @@ def get_names_amount():
             numOfNames+=1
         else:
             return numOfNames
+        
+def play_rock_paper_scissors():
+    listOfOptions:list = ["kő","papír","olló"]
+    userpick:str = ""
+    computerpick:str = listOfOptions[int(random.random()*3)]
+
+    print("Játszunk kő papír ollót.")
+    while(userpick != "kő" and userpick != "papír" and userpick != "olló"):
+         userpick = input("Válassz! (Kő, Papír, Olló): ").lower()
+    if(userpick == computerpick):
+        print("Döntetlen!")
+    elif((userpick == "kő" and computerpick == "olló") or (userpick == "papír" and computerpick == "kő") or (userpick == "olló" and computerpick == "papír")):
+        print("Te nyertél!")
+    else:
+        print("Sajnos vesztettél")
