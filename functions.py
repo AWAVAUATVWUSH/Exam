@@ -28,3 +28,11 @@ def get_num_of_devis_by_three_in_list(inlist:list = []):
             numToRet+=1
         i+=1
     return numToRet
+
+def print_character_in_text(instring:str="", charToCheck:int=0):
+    i:int = 0
+    iMax:int = len(instring)
+    if(iMax>=charToCheck):
+        print(f"A szöveg {charToCheck}. karaktere {instring[charToCheck-1]} - {instring[charToCheck-1].upper()}{instring[charToCheck-1].upper()}{instring[charToCheck-1].upper()}")
+    else:
+        print(f"A szöveg nem tartalmaz {charToCheck}. karaktert")

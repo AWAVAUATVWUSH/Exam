@@ -1,4 +1,4 @@
-from functions import get_even_num, randnum_gen, get_num_of_devis_by_three_in_list
+from functions import get_even_num, randnum_gen, get_num_of_devis_by_three_in_list, print_character_in_text
 
 print("Feldadat 1:")
 num1 = get_even_num()
@@ -9,3 +9,5 @@ print(numlist)
 devisByThree:int = get_num_of_devis_by_three_in_list(numlist)
 print(f"A számok között {devisByThree} db 3-mal osztható van!")
 
+print("\nFeladat 3:")
+print_character_in_text("Megeszem a kalapom", 3)
