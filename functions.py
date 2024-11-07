@@ -36,3 +36,12 @@ def print_character_in_text(instring:str="", charToCheck:int=0):
         print(f"A szöveg {charToCheck}. karaktere {instring[charToCheck-1]} - {instring[charToCheck-1].upper()}{instring[charToCheck-1].upper()}{instring[charToCheck-1].upper()}")
     else:
         print(f"A szöveg nem tartalmaz {charToCheck}. karaktert")
+
+def get_names_amount():
+    numOfNames:int = 0
+    while(True):
+        name:str = input("Adj meg egy nevet vagy írj '@' a befejezéshez: ")
+        if(name != '@'):
+            numOfNames+=1
+        else:
+            return numOfNames
