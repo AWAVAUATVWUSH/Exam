@@ -15,7 +15,7 @@ def randnum_gen(numOfNums:int = 0):
     numlist:list = []
     i:int = 0
     while(i<numOfNums):
-        numlist.append(int(random.random()*161-10))
+        numlist.append(int(random.random()*141+10))
         i+=1
     return numlist
 
